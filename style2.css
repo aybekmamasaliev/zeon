@@ -283,6 +283,11 @@ footer {
   color: #7f8d97;
 }
 
+.info > ul > li a {
+  color: #ffffff ;
+  text-decoration: none;
+}
+
 /*_____________________________________ Adaptive 1366px - 992px ___________________________*/
 
 @media (max-width: 1366px) {

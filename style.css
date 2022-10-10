@@ -27,7 +27,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .divUnderBurget {
@@ -58,7 +59,9 @@ body {
   background-color: red;
 }
 
-
+button:hover{
+  background-color: grey;
+}
 
 .divUnderBurget ul li{
   /* background-color: red; */
@@ -889,9 +892,12 @@ footer {
   } */
 
   .burgerMain {
-    visibility: visible;
+    /* visibility: visible; */
+    display: block;
     position: absolute;
     right: 20px;
+    display: flex;
+    justify-content: space-around;
   }
 
 

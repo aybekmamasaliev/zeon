@@ -21,6 +21,10 @@ body {
   font-family: var(--ff-main);
 }
 
+a {
+  color: #181818;
+}
+
 .container {
   width: 1168px;
   margin: 0 auto;
@@ -44,7 +48,8 @@ header {
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .burger {
@@ -63,7 +68,8 @@ header {
 }
 
 .divUnderBurget {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   color: green;
   position: fixed;
   width: 50%;
@@ -100,7 +106,8 @@ header {
 }
 
 .ununvisible {
-  visibility: visible !important;
+  /* visibility: visible !important; */
+  display: block;
   animation: 0.4s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) smooth-appear;
   animation-delay: 0s;
   position: relative;
@@ -247,11 +254,12 @@ footer {
 }
 
 .page_abut_us {
-  width: 868px;
-  height: 735px;
+  width: 100%;
+  height: auto;
   position: relative;
-  left: -150px;
+  left: 105px;
   padding-top: 33px;
+  border:1px solid red
 }
 
 .page_abut_us h2 {
@@ -266,8 +274,8 @@ footer {
 }
 
 .page_abut_us p {
-  width: 868px;
-  height: 609px;
+  width: 90%;
+  height: auto;
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
@@ -354,9 +362,13 @@ footer {
   }
 
   .burgerMain {
-    visibility: visible;
+    /* visibility: visible; */
+    display: block;
     position: absolute;
     right: 20px;
+    display: flex;
+    justify-content: space-around;
+
   }
 
   .footer{

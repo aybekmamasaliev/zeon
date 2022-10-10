@@ -14,11 +14,16 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: var(--ff-main);
+}
+
+a{
+  color: #0e0e0e;
 }
 
 .burgerMain {
@@ -673,6 +678,11 @@ footer {
   align-items: center;
 }
 
+.info > ul > li a {
+  color: #ffffff ;
+  text-decoration: none;
+}
+
 .info > ul > li > img {
   margin-right: 16.58px;
 }
@@ -692,6 +702,8 @@ footer {
   height: 342px;
   background-image: url(./media/map.svg);
   margin-bottom: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .smm {
@@ -1028,6 +1040,8 @@ footer {
     height: 342px;
     background-image: url(./media/map.svg);
     margin-bottom: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
 
   }
 

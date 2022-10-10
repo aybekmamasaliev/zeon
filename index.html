@@ -11,6 +11,13 @@
     <header>
       <div class="container menu">
         <h1>Лого</h1>
+        <div class="burgerMain" id="undermenu">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </div>
+
         <div class="div_for_anchors">
           <ul class="anchors">
             <li>
@@ -32,7 +39,7 @@
                 />
               </a>
             </li>
-            <li style="margin-right:6px ;">
+            <li style="margin-right: 6px">
               <a href="#contacts">
                 Контакты
                 <img
@@ -59,6 +66,34 @@
                   alt="flag-for-russia"
                 />
               </button>
+            </li>
+          </ul>
+        </div>
+        <div class="divUnderBurget">
+          <ul id="li">
+            <li><a href="./about.html">О нас</a></li>
+            <li><a href="#mission"> Наша миссия</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+          <ul id="li">
+            <li>Язык:</li>
+            <li>
+              <a href="#doctors"
+                ><button class="kg">
+                  <img
+                    src="./media/emojione-v1_flag-for-kyrgyzstan5.svg"
+                    alt="flag-for-kyrgyzstan5"
+                  /></button
+              ></a>
+            </li>
+            <li>
+              <a href="#doctors">
+                <button class="ru" style="margin-right:10px ;">
+                  <img
+                    src="./media/twemoji_flag-for-flag-russia6.svg"
+                    alt="flag-for-russia"
+                  /></button
+              ></a>
             </li>
           </ul>
         </div>
@@ -91,11 +126,11 @@
     </section>
     <div class="container help">
       <div class="personal_room_first">
-        <div style="width: 300px;">
+        <div style="width: 300px">
           <p>Личный кабинет</p>
           <p class="second_p_of_personal_room">На стадии разработки</p>
         </div>
-        <img src="./media/Work3.svg" alt="work" class="work_folder"/>
+        <img src="./media/Work3.svg" alt="work" class="work_folder" />
       </div>
       <div class="personal_room">
         <div>
@@ -105,18 +140,18 @@
         </div>
         <img src="./media/Setting1.svg" alt="settting" class="settting" />
       </div>
-      <div class="personal_room " >
+      <div class="personal_room">
         <div>
           <p class="p_bolt">Тарифы и калькуляторы</p>
           <p>Действующие тарифы на услуги</p>
           <p>Кыргызтеплоэнерго</p>
         </div>
-        <img src="./media/cheking.svg" alt="cheking" class="settting"/>
+        <img src="./media/cheking.svg" alt="cheking" class="settting" />
       </div>
     </div>
     <div class="container news">
       <p class="world_news">Последние актуальные новости в мире энергии</p>
-      <div class=" news_blocks">
+      <div class="news_blocks">
         <div class="meeting">
           <p class="date">08.04.03 18:34</p>
           <p class="meet_big">
@@ -230,5 +265,14 @@
         <div class="map"></div>
       </div>
     </footer>
+    <script>
+      let burger = document.querySelector(".burgerMain");
+      burger.onclick = function () {
+        // document.querySelector(".h1").classList.toggle("visible");
+        document
+          .querySelector(".divUnderBurget")
+          .classList.toggle("ununvisible");
+      };
+    </script>
   </body>
 </html>

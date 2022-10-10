@@ -21,6 +21,67 @@ body {
   font-family: var(--ff-main);
 }
 
+.burgerMain {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.divUnderBurget {
+  visibility: hidden;
+  color: green;
+  position: fixed;
+  width: 50%;
+  height: 200px;
+  /* background-color: red; */
+  text-align: center;
+  position: absolute;
+  left:50%;
+  top:130px;
+  z-index: 2;
+}
+
+.divUnderBurget > ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 4;
+  background-color: white;
+  min-height: 100px;
+  box-shadow: 1px 3px 2px 2px blue;
+}
+
+.divUnderBurget ul li:hover {
+  text-align: center;
+  background-color: red;
+}
+
+
+
+.divUnderBurget ul li{
+  /* background-color: red; */
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.ununvisible {
+  visibility: visible !important;
+  animation: 0.4s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) smooth-appear;
+  animation-delay: 0s;
+  position: relative;
+}
+
+.burger {
+  width: 45px;
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+}
+
 .container {
   width: 1168px;
   margin: 0 auto;
@@ -36,6 +97,8 @@ header {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  position: relative;
+  border: 1px solid green;
 }
 
 .div_for_anchors {
@@ -247,7 +310,6 @@ section {
   position: relative;
   display: flex;
   padding-bottom: 22px;
-  /* border: 1px solid red; */
 }
 
 .personal_room_first {
@@ -725,6 +787,7 @@ footer {
   flex-direction: column;
   height: auto;
   align-items: center;
+  border: 2px solid green;
 }
 
 .meeting_report{
@@ -734,6 +797,17 @@ footer {
   height: auto;
   margin-top: 20px;
   flex-wrap: wrap;
+}
+
+.meeting {
+  width: 95%;
+  height: auto;
+  background-color: #181818;
+  background-image: url(./media/worker.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+  padding-top: 287px;
 }
 
 
@@ -818,7 +892,19 @@ footer {
     width: 100%;
   }
 
+  .burgerMain {
+    visibility: visible;
+    position: absolute;
+    right: 20px;
+  }
 
+  .div_for_anchors{
+    display: none;
+  }
+
+  .news{
+    width:95%;
+  }
 
   .div_for_anchors {
     margin-left: 10px;
@@ -841,6 +927,49 @@ footer {
     width: 450px;
   }
 
+  .nature{
+    height: 650px;
+  }
+
+  .history{
+    height: 650px;
+  }
+
+  .purpose{
+    height: 650px;
+  }
+
+  .introduse{
+    height: 650px;
+  }
+
+  .info {
+    width: 200px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+.news_blocks{
+  width: 100%;
+}
+
+.world_news {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.meet_big {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  line-height: 125%;
+  margin-top: 5px;
+}
+
+
   .harmfullity{
     display:flex;
     align-items: center;
@@ -850,7 +979,6 @@ footer {
     display:flex;
     align-items: center;
   }
-
   .nature{
     display:flex;
     align-items: center;
@@ -859,13 +987,37 @@ footer {
   .how_we_start{
     margin: 0 auto;
     position:absolute;
-    left: 64px;
+    width: 300px;
+    height: auto;
   }
+
+
+  .big_words{
+    width:200px;
+    font-size: 18px;
+  }
+
+  .how_we_start_2{
+    width:320px;
+    height: auto;
+    left:10px;
+  }
+  
 
   .how_we_start_3{
     margin: 0 auto;
     position:absolute;
-    left: 64px;
+    width:300px;
+    height: 500px;
+  }
+
+  .small_words{
+    width:220px;
+    height: auto;
+  }
+
+  .more_details{
+    width:180px;
   }
 
   .map {
@@ -886,23 +1038,112 @@ footer {
     height: auto;
   }
 
-
-
-
 }
 
-/*____ 576px - 320px __*/
+/*__________________________________ adaptive 440px - 380px  _____________________________*/
+
+
+@media (max-width:440px) {
+  .models img{
+    position: absolute;
+    width:320px;
+    left:20px
+  }
+
+  .divUnderBurget {
+    visibility: hidden;
+    color: green;
+    position: fixed;
+    width: 50%;
+    height: 200px;
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    left:49%;
+    top:63px;
+    z-index: 2;
+  }
+
+  .models{
+    height: 280px;
+    width: 95%;
+  }
+
+
+  .heating{
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .each_heat{
+    width: auto;
+    height: auto;
+  }
+
+  .personal_room{
+    display: flex;
+    justify-content: space-between;
+    height:auto;
+    width:90%;
+  
+  }
+
+  .menu{
+    padding-right:20px;
+    padding-left:20px;
+  }
+  
+  .personal_room_first{
+    display: flex;
+    justify-content: space-between;
+    height:auto;
+    width:90%;
+  }
+
+  .how_we_start{
+    margin: 0 auto;
+    position:absolute;
+    left: 10px;
+    width: 280px;
+    height: auto;
+    padding:10px
+  }
 
 
 
+  .how_we_start_2{
+    width:280px;
+    height: auto;
+    left:10px;
+    padding: 10px;
+  }
 
+  .heat{
+    width: 200px;
+  }
 
+  
 
+  .how_we_start_3{
+    margin: 0 auto;
+    position:absolute;
+    left: 10px;
+    width:280px;
+    height: 500px;
+    padding: 10px;
+  }
 
+  
+}
 
+/*__________________________________ adaptive 380px - 310px _____________________________*/
 
+@media (max-width:380px) {
 
-
-
-
-/*______*/
+  .models img{
+    position: absolute;
+    width:300px;
+    left:0
+  }
+  
+}

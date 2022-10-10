@@ -97,7 +97,6 @@ header {
   align-items: center;
   padding-left: 10px;
   position: relative;
-  border: 1px solid green;
 }
 
 .div_for_anchors {
@@ -786,7 +785,6 @@ footer {
   flex-direction: column;
   height: auto;
   align-items: center;
-  border: 2px solid green;
 }
 
 .meeting_report{
@@ -816,7 +814,6 @@ footer {
   display: flex ;
   justify-content: space-around;
   margin-top: 83px;
-  border: 2px solid green;
 }
 
 }
@@ -1056,6 +1053,7 @@ footer {
     position: fixed;
     width: 50%;
     height: 200px;
+    background-color: red;
     text-align: center;
     position: absolute;
     left:49%;
